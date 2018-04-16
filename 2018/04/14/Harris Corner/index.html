@@ -90,7 +90,7 @@
 <meta property="og:image" content="https://i.loli.net/2018/04/16/5ad3f705f3a1b.png">
 <meta property="og:image" content="https://i.loli.net/2018/04/16/5ad3f72690bab.png">
 <meta property="og:image" content="https://i.loli.net/2018/04/16/5ad3f85baa285.png">
-<meta property="og:updated_time" content="2018-04-16T05:38:14.841Z">
+<meta property="og:updated_time" content="2018-04-16T06:41:44.687Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Harris Corner">
 <meta name="twitter:description" content="Basic idea Algorithm Codemain.m                主函数im = imread(&amp;apos;officegray.bmp&amp;apos;); im = double(im);  sigma = 2.5; thresh = 35;   nonmaxrad = 5; K=0.02; [cim, r3, c3] = harris(im, sigma,thresh,">
@@ -358,7 +358,7 @@
       
         <h1 id="Basic-idea"><a href="#Basic-idea" class="headerlink" title="Basic idea"></a>Basic idea</h1><h3 id=""><a href="#" class="headerlink" title=""></a><img src="https://i.loli.net/2018/04/16/5ad3f705f3a1b.png" alt="微信图片_20180416090409.png" title="微信图片_20180416090409.png"></h3><p><img src="https://i.loli.net/2018/04/16/5ad3f72690bab.png" alt="微信图片_20180416090440.png" title="微信图片_20180416090440.png"></p>
 <h1 id="Algorithm"><a href="#Algorithm" class="headerlink" title="Algorithm"></a>Algorithm</h1><p><img src="https://i.loli.net/2018/04/16/5ad3f85baa285.png" alt="微信图片_20180416091127.png" title="微信图片_20180416091127.png"></p>
-<h1 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h1><h3 id="main-m-主函数"><a href="#main-m-主函数" class="headerlink" title="main.m                主函数"></a>main.m                主函数</h3><pre><code>im = imread(&apos;officegray.bmp&apos;);
+<h1 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h1><h2 id="main-m-主函数"><a href="#main-m-主函数" class="headerlink" title="main.m                主函数"></a>main.m                主函数</h2><pre><code>im = imread(&apos;officegray.bmp&apos;);
 im = double(im);
 
 sigma = 2.5;
@@ -369,7 +369,7 @@ K=0.02;
 
 figure;
 imshow(im,[]), hold on, plot(c3,r3,&apos;*&apos;);
-</code></pre><h3 id="harris-m-角点检测"><a href="#harris-m-角点检测" class="headerlink" title="harris.m            角点检测"></a>harris.m            角点检测</h3><pre><code>function [cim, r, c, rsubp, csubp] = harris(im, sigma, thresh, radius, disp)
+</code></pre><h2 id="harris-m-角点检测"><a href="#harris-m-角点检测" class="headerlink" title="harris.m            角点检测"></a>harris.m            角点检测</h2><pre><code>function [cim, r, c, rsubp, csubp] = harris(im, sigma, thresh, radius, disp)
 error(nargchk(2,5,nargin));
 if nargin == 4
 disp = 0;
@@ -402,7 +402,7 @@ else     % Just do the nonmaximal suppression
     end
 end
 end
-</code></pre><h3 id="derivative5-m-计算梯度"><a href="#derivative5-m-计算梯度" class="headerlink" title="derivative5.m            计算梯度"></a>derivative5.m            计算梯度</h3><pre><code>function varargout = derivative5(im, varargin)
+</code></pre><h2 id="derivative5-m-计算梯度"><a href="#derivative5-m-计算梯度" class="headerlink" title="derivative5.m            计算梯度"></a>derivative5.m            计算梯度</h2><pre><code>function varargout = derivative5(im, varargin)
 varargin = varargin(:);
 varargout = cell(size(varargin));
 
@@ -448,7 +448,7 @@ for n = 1:length(varargin)
       error(sprintf(&apos;&apos;&apos;%s&apos;&apos; is an unrecognized derivative option&apos;,varargin{n}));
   end
 end
-</code></pre><h3 id="Gaussfilt-m-高斯滤波"><a href="#Gaussfilt-m-高斯滤波" class="headerlink" title="Gaussfilt.m            高斯滤波"></a>Gaussfilt.m            高斯滤波</h3><pre><code>function smim = gaussfilt(im, sigma)
+</code></pre><h2 id="Gaussfilt-m-高斯滤波"><a href="#Gaussfilt-m-高斯滤波" class="headerlink" title="Gaussfilt.m            高斯滤波"></a>Gaussfilt.m            高斯滤波</h2><pre><code>function smim = gaussfilt(im, sigma)
 assert(ndims(im) == 2, &apos;Image must be greyscale&apos;);
 
 if ~strcmp(class(im),&apos;double&apos;)
@@ -464,7 +464,7 @@ sze = max(sze,1);
 h = fspecial(&apos;gaussian&apos;, [sze sze], sigma);
 
 smim = filter2(h, im);
-</code></pre><h3 id="nonmaxsuppts-m-非极大值抑制"><a href="#nonmaxsuppts-m-非极大值抑制" class="headerlink" title="nonmaxsuppts.m         非极大值抑制"></a>nonmaxsuppts.m         非极大值抑制</h3><pre><code>function [r,c, rsubp, csubp] = nonmaxsuppts(cim, radius, thresh, im)
+</code></pre><h2 id="nonmaxsuppts-m-非极大值抑制"><a href="#nonmaxsuppts-m-非极大值抑制" class="headerlink" title="nonmaxsuppts.m         非极大值抑制"></a>nonmaxsuppts.m         非极大值抑制</h2><pre><code>function [r,c, rsubp, csubp] = nonmaxsuppts(cim, radius, thresh, im)
 subPixel = nargout == 4;            % We want sub-pixel locations    
 [rows,cols] = size(cim);
 
@@ -707,7 +707,7 @@ end
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Basic-idea"><span class="nav-number">1.</span> <span class="nav-text">Basic idea</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#"><span class="nav-number">1.0.1.</span> <span class="nav-text"></span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Algorithm"><span class="nav-number">2.</span> <span class="nav-text">Algorithm</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Code"><span class="nav-number">3.</span> <span class="nav-text">Code</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#main-m-主函数"><span class="nav-number">3.0.1.</span> <span class="nav-text">main.m                主函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#harris-m-角点检测"><span class="nav-number">3.0.2.</span> <span class="nav-text">harris.m            角点检测</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#derivative5-m-计算梯度"><span class="nav-number">3.0.3.</span> <span class="nav-text">derivative5.m            计算梯度</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Gaussfilt-m-高斯滤波"><span class="nav-number">3.0.4.</span> <span class="nav-text">Gaussfilt.m            高斯滤波</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#nonmaxsuppts-m-非极大值抑制"><span class="nav-number">3.0.5.</span> <span class="nav-text">nonmaxsuppts.m         非极大值抑制</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Basic-idea"><span class="nav-number">1.</span> <span class="nav-text">Basic idea</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#"><span class="nav-number">1.0.1.</span> <span class="nav-text"></span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Algorithm"><span class="nav-number">2.</span> <span class="nav-text">Algorithm</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Code"><span class="nav-number">3.</span> <span class="nav-text">Code</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#main-m-主函数"><span class="nav-number">3.1.</span> <span class="nav-text">main.m                主函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#harris-m-角点检测"><span class="nav-number">3.2.</span> <span class="nav-text">harris.m            角点检测</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#derivative5-m-计算梯度"><span class="nav-number">3.3.</span> <span class="nav-text">derivative5.m            计算梯度</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Gaussfilt-m-高斯滤波"><span class="nav-number">3.4.</span> <span class="nav-text">Gaussfilt.m            高斯滤波</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#nonmaxsuppts-m-非极大值抑制"><span class="nav-number">3.5.</span> <span class="nav-text">nonmaxsuppts.m         非极大值抑制</span></a></li></ol></li></ol></div>
             
 
           </div>
