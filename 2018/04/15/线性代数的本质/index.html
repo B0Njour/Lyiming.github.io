@@ -79,13 +79,13 @@
 
 
 
-<meta name="description" content="1、向量究竟是什么三种观点 物理：向量是空间中的箭头 计算机：向量是有序的数字列表 数学：向量可以是任何东西，只要保证两个向量相加以及数字和向量相乘有意义即可。 2、线性组合、张成的空间线性组合“将向量进行缩放再相加” 这种操作称为线性组合      张成的空间v, w 的 全部线性组合 所构成的向量集合称为向量 v, w 所张成的空间。  线性相关和线性无关  基的严格定义 3、矩阵与线性变换输">
+<meta name="description" content="向量究竟是什么三种观点 物理：向量是空间中的箭头 计算机：向量是有序的数字列表 数学：向量可以是任何东西，只要保证两个向量相加以及数字和向量相乘有意义即可。 线性组合、张成的空间线性组合“将向量进行缩放再相加” 这种操作称为线性组合      张成的空间v, w 的 全部线性组合 所构成的向量集合称为向量 v, w 所张成的空间。  线性相关和线性无关  基的严格定义 矩阵与线性变换输入一个向量，">
 <meta name="keywords" content="Math">
 <meta property="og:type" content="article">
 <meta property="og:title" content="线性代数的本质">
 <meta property="og:url" content="http://yoursite.com/2018/04/15/线性代数的本质/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="1、向量究竟是什么三种观点 物理：向量是空间中的箭头 计算机：向量是有序的数字列表 数学：向量可以是任何东西，只要保证两个向量相加以及数字和向量相乘有意义即可。 2、线性组合、张成的空间线性组合“将向量进行缩放再相加” 这种操作称为线性组合      张成的空间v, w 的 全部线性组合 所构成的向量集合称为向量 v, w 所张成的空间。  线性相关和线性无关  基的严格定义 3、矩阵与线性变换输">
+<meta property="og:description" content="向量究竟是什么三种观点 物理：向量是空间中的箭头 计算机：向量是有序的数字列表 数学：向量可以是任何东西，只要保证两个向量相加以及数字和向量相乘有意义即可。 线性组合、张成的空间线性组合“将向量进行缩放再相加” 这种操作称为线性组合      张成的空间v, w 的 全部线性组合 所构成的向量集合称为向量 v, w 所张成的空间。  线性相关和线性无关  基的严格定义 矩阵与线性变换输入一个向量，">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://i.loli.net/2018/04/15/5ad369d2b901c.png">
 <meta property="og:image" content="https://i.loli.net/2018/04/15/5ad369ffad5f0.png">
@@ -104,10 +104,10 @@
 <meta property="og:image" content="https://i.loli.net/2018/04/15/5ad36c4bc0490.png">
 <meta property="og:image" content="https://i.loli.net/2018/04/15/5ad36c664235c.png">
 <meta property="og:image" content="https://i.loli.net/2018/04/15/5ad36c80ee5d0.png">
-<meta property="og:updated_time" content="2018-04-16T06:43:41.028Z">
+<meta property="og:updated_time" content="2018-04-16T07:14:53.733Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="线性代数的本质">
-<meta name="twitter:description" content="1、向量究竟是什么三种观点 物理：向量是空间中的箭头 计算机：向量是有序的数字列表 数学：向量可以是任何东西，只要保证两个向量相加以及数字和向量相乘有意义即可。 2、线性组合、张成的空间线性组合“将向量进行缩放再相加” 这种操作称为线性组合      张成的空间v, w 的 全部线性组合 所构成的向量集合称为向量 v, w 所张成的空间。  线性相关和线性无关  基的严格定义 3、矩阵与线性变换输">
+<meta name="twitter:description" content="向量究竟是什么三种观点 物理：向量是空间中的箭头 计算机：向量是有序的数字列表 数学：向量可以是任何东西，只要保证两个向量相加以及数字和向量相乘有意义即可。 线性组合、张成的空间线性组合“将向量进行缩放再相加” 这种操作称为线性组合      张成的空间v, w 的 全部线性组合 所构成的向量集合称为向量 v, w 所张成的空间。  线性相关和线性无关  基的严格定义 矩阵与线性变换输入一个向量，">
 <meta name="twitter:image" content="https://i.loli.net/2018/04/15/5ad369d2b901c.png">
 
 
@@ -370,18 +370,18 @@
       
 
       
-        <h1 id="1、向量究竟是什么"><a href="#1、向量究竟是什么" class="headerlink" title="1、向量究竟是什么"></a>1、向量究竟是什么</h1><p>三种观点</p>
+        <h1 id="向量究竟是什么"><a href="#向量究竟是什么" class="headerlink" title="向量究竟是什么"></a>向量究竟是什么</h1><p>三种观点</p>
 <p>物理：向量是空间中的箭头</p>
 <p>计算机：向量是有序的数字列表</p>
 <p>数学：向量可以是任何东西，只要保证两个向量相加以及数字和向量相乘有意义即可。</p>
-<h1 id="2、线性组合、张成的空间"><a href="#2、线性组合、张成的空间" class="headerlink" title="2、线性组合、张成的空间"></a>2、线性组合、张成的空间</h1><h2 id="线性组合"><a href="#线性组合" class="headerlink" title="线性组合"></a>线性组合</h2><p>“<strong>将向量进行缩放再相加</strong>” 这种操作称为<strong>线性组合</strong>    </p>
+<h1 id="线性组合、张成的空间"><a href="#线性组合、张成的空间" class="headerlink" title="线性组合、张成的空间"></a>线性组合、张成的空间</h1><h2 id="线性组合"><a href="#线性组合" class="headerlink" title="线性组合"></a>线性组合</h2><p>“<strong>将向量进行缩放再相加</strong>” 这种操作称为<strong>线性组合</strong>    </p>
 <p><a href="https://i.loli.net/2018/04/15/5ad369d2b901c.png" target="_blank" rel="noopener"><img src="https://i.loli.net/2018/04/15/5ad369d2b901c.png" alt="linear_algebra_linear_combination.png"></a></p>
 <h2 id="张成的空间"><a href="#张成的空间" class="headerlink" title="张成的空间"></a><strong>张成的空间</strong></h2><p>v, w 的 <strong>全部线性组合</strong> 所构成的向量集合称为向量 v, w 所张成的空间。</p>
 <p><a href="https://i.loli.net/2018/04/15/5ad369ffad5f0.png" target="_blank" rel="noopener"><img src="https://i.loli.net/2018/04/15/5ad369ffad5f0.png" alt="linear_algebra_span.png"></a></p>
 <h2 id="线性相关和线性无关"><a href="#线性相关和线性无关" class="headerlink" title="线性相关和线性无关"></a><strong>线性相关</strong>和<strong>线性无关</strong></h2><p><a href="https://i.loli.net/2018/04/15/5ad36a365350c.png" target="_blank" rel="noopener"><img src="https://i.loli.net/2018/04/15/5ad36a365350c.png" alt="linear_algebra_linear_dependent.png"></a></p>
 <p><a href="https://i.loli.net/2018/04/15/5ad36a57c58b5.png" target="_blank" rel="noopener"><img src="https://i.loli.net/2018/04/15/5ad36a57c58b5.png" alt="linear_algebra_linear_independent.png"></a></p>
 <h2 id="基的严格定义"><a href="#基的严格定义" class="headerlink" title="基的严格定义"></a><strong>基</strong>的严格定义</h2><p><a href="https://i.loli.net/2018/04/15/5ad36aceccd2c.png" target="_blank" rel="noopener"><img src="https://i.loli.net/2018/04/15/5ad36aceccd2c.png" alt="linear_algebra_basis_definition.png"></a></p>
-<h1 id="3、矩阵与线性变换"><a href="#3、矩阵与线性变换" class="headerlink" title="3、矩阵与线性变换"></a>3、矩阵与线性变换</h1><p>输入一个向量，会输出另一个向量</p>
+<h1 id="矩阵与线性变换"><a href="#矩阵与线性变换" class="headerlink" title="矩阵与线性变换"></a>矩阵与线性变换</h1><p>输入一个向量，会输出另一个向量</p>
 <p><a href="https://i.loli.net/2018/04/15/5ad36ae34ee68.png" target="_blank" rel="noopener"><img src="https://i.loli.net/2018/04/15/5ad36ae34ee68.png" alt="linear_algebra_transform_vector_move.png"></a></p>
 <p>变换前：白色方格</p>
 <p>变换后：蓝色菱形</p>
@@ -393,20 +393,20 @@
 <p><a href="https://i.loli.net/2018/04/15/5ad36b362af20.png" target="_blank" rel="noopener"><img src="https://i.loli.net/2018/04/15/5ad36b362af20.png" alt="linear_algebra_transform_abcdxy_after.png"></a></p>
 <h2 id="二维旋转矩阵"><a href="#二维旋转矩阵" class="headerlink" title="二维旋转矩阵"></a>二维旋转矩阵</h2><p>$\begin{bmatrix} cos\theta&amp;-sin\theta \sin\theta\ &amp;  cos\theta \ \end{bmatrix} $</p>
 <p>将坐标轴逆时针旋转$\theta$角度,向量<strong>$i$</strong>（1,0）就 变成了（$cos\theta,sin\theta$）,向量<strong>$j$</strong>（0,1）就 变成了（$-sin\theta,cos\theta$）。</p>
-<h1 id="4、矩阵乘法与线性变换复合"><a href="#4、矩阵乘法与线性变换复合" class="headerlink" title="4、矩阵乘法与线性变换复合"></a>4、矩阵乘法与线性变换复合</h1><h2 id="矩阵相乘的几何意义"><a href="#矩阵相乘的几何意义" class="headerlink" title="矩阵相乘的几何意义"></a>矩阵相乘的几何意义</h2><p>矩阵相乘的几何意义，就是线性变换的复合。</p>
+<h1 id="矩阵乘法与线性变换复合"><a href="#矩阵乘法与线性变换复合" class="headerlink" title="矩阵乘法与线性变换复合"></a>矩阵乘法与线性变换复合</h1><h2 id="矩阵相乘的几何意义"><a href="#矩阵相乘的几何意义" class="headerlink" title="矩阵相乘的几何意义"></a>矩阵相乘的几何意义</h2><p>矩阵相乘的几何意义，就是线性变换的复合。</p>
 <p><img src="https://i.loli.net/2018/04/15/5ad3680c3aa74.png" alt=""></p>
 <p>要从右往左读，因为Shear和Rotation乘的几何意义是先旋转变换再剪切变换。显然先Shear和先Rotation的效果是不一样的，这也是为什么矩阵乘法中AB$\neq$BA。</p>
 <p><a href="https://i.loli.net/2018/04/15/5ad36b79bd1d2.png" target="_blank" rel="noopener"><img src="https://i.loli.net/2018/04/15/5ad36b79bd1d2.png" alt="微信图片_20180415135939.png"></a></p>
 <p><a href="https://i.loli.net/2018/04/15/5ad36bd0c5c3f.png" target="_blank" rel="noopener"><img src="https://i.loli.net/2018/04/15/5ad36bd0c5c3f.png" alt="微信图片_20180415140104.png"></a></p>
 <h2 id="矩阵结合率的证明"><a href="#矩阵结合率的证明" class="headerlink" title="矩阵结合率的证明"></a>矩阵结合率的证明</h2><p>为什么(AB)C=A(BC)?哈哈哈，答案很简单，因为它们从右往左读是一样的！都是由C$\rightarrow$B$\rightarrow$A的线性变换！</p>
 <p>（这里吐槽一下上课学的线代，证明的时候就给个矩阵让你自己推一遍，根本不知道为什么）</p>
-<h1 id="5、行列式"><a href="#5、行列式" class="headerlink" title="5、行列式"></a>5、行列式</h1><h2 id="行列式的几何意义"><a href="#行列式的几何意义" class="headerlink" title="行列式的几何意义"></a>行列式的几何意义</h2><p>线性变换对面积产生改变的比例（也可以为负值，即空间取向发生了反转），称为这个变换的行列式。<a href="https://i.loli.net/2018/04/15/5ad36bf9bc64b.png" target="_blank" rel="noopener"><img src="https://i.loli.net/2018/04/15/5ad36bf9bc64b.png" alt="微信图片_20180415204552.png"></a></p>
+<h1 id="行列式"><a href="#行列式" class="headerlink" title="行列式"></a>行列式</h1><h2 id="行列式的几何意义"><a href="#行列式的几何意义" class="headerlink" title="行列式的几何意义"></a>行列式的几何意义</h2><p>线性变换对面积产生改变的比例（也可以为负值，即空间取向发生了反转），称为这个变换的行列式。<a href="https://i.loli.net/2018/04/15/5ad36bf9bc64b.png" target="_blank" rel="noopener"><img src="https://i.loli.net/2018/04/15/5ad36bf9bc64b.png" alt="微信图片_20180415204552.png"></a></p>
 <p>理解他的意义比计算重要得多。</p>
 <p>行列式等于零，意味着这个矩阵所代表的变换将空间压缩到了更小的维度上。（两个向量共线了）</p>
 <p><a href="https://i.loli.net/2018/04/15/5ad36c1018928.png" target="_blank" rel="noopener"><img src="https://i.loli.net/2018/04/15/5ad36c1018928.png" alt="微信图片_20180415204938.png"></a></p>
 <p>det（AB）=det(A)*det(B) 为什么？</p>
 <p>因为det（AB）表示经过AB两次缩放后的面积，det（A）*det（B）表示先A后B放缩后的面积，本质上是一样的。</p>
-<h1 id="6、逆矩阵、列空间与零空间"><a href="#6、逆矩阵、列空间与零空间" class="headerlink" title="6、逆矩阵、列空间与零空间"></a>6、逆矩阵、列空间与零空间</h1><h2 id="逆矩阵"><a href="#逆矩阵" class="headerlink" title="逆矩阵"></a>逆矩阵</h2><p>如果一个矩阵$A$把向量<strong>$x$</strong>变成了向量<strong>$v$</strong>,那么逆矩阵$A^{-1}$表示把向量<strong>$v$</strong>变成了向量<strong>$x$</strong>的线性变换。</p>
+<h1 id="逆矩阵、列空间与零空间"><a href="#逆矩阵、列空间与零空间" class="headerlink" title="逆矩阵、列空间与零空间"></a>逆矩阵、列空间与零空间</h1><h2 id="逆矩阵"><a href="#逆矩阵" class="headerlink" title="逆矩阵"></a>逆矩阵</h2><p>如果一个矩阵$A$把向量<strong>$x$</strong>变成了向量<strong>$v$</strong>,那么逆矩阵$A^{-1}$表示把向量<strong>$v$</strong>变成了向量<strong>$x$</strong>的线性变换。</p>
 <p>$AA^{-1}=E$，因为$AA^{-1}$因为把一个向量变过去又变过来，相当于什么都没做。这被称为恒等变换。</p>
 <h2 id="线性方程组的求解"><a href="#线性方程组的求解" class="headerlink" title="线性方程组的求解"></a>线性方程组的求解</h2><p><a href="https://i.loli.net/2018/04/15/5ad36c4bc0490.png" target="_blank" rel="noopener"><img src="https://i.loli.net/2018/04/15/5ad36c4bc0490.png" alt="微信图片_20180415212410.png"></a></p>
 <p>两边同时乘以$A^{-1}$:</p>
@@ -430,7 +430,7 @@
 <h2 id="零空间"><a href="#零空间" class="headerlink" title="零空间"></a>零空间</h2><p>变换后落在原点的向量的集合，成为“零空间”或“核”。</p>
 <p>对于线性方程组，当向量$v$为0时，即$Ax = 0$时，零空间给出的就是这个线性方程组所有可能的解。</p>
 <p><a href="https://i.loli.net/2018/04/15/5ad36c80ee5d0.png" target="_blank" rel="noopener"><img src="https://i.loli.net/2018/04/15/5ad36c80ee5d0.png" alt="微信图片_20180415221404.png"></a></p>
-<h1 id="7、点积与对偶性"><a href="#7、点积与对偶性" class="headerlink" title="7、点积与对偶性"></a>7、点积与对偶性</h1><p>一个向量的对偶是它定义的线性变换。 </p>
+<h1 id="点积与对偶性"><a href="#点积与对偶性" class="headerlink" title="点积与对偶性"></a>点积与对偶性</h1><p>一个向量的对偶是它定义的线性变换。 </p>
 <p>一个多维空间到一维空间的线性变换的对偶是多维空间中的某个特定向量。</p>
 <p>两个向量点积，就是将其中一个转化为线性变换。这个证明有点强，建议看视频！</p>
 
@@ -463,8 +463,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/04/15/音乐/" rel="next" title="我喜欢的音乐">
-                <i class="fa fa-chevron-left"></i> 我喜欢的音乐
+              <a href="/2018/04/14/Harris Corner/" rel="next" title="Harris Corner">
+                <i class="fa fa-chevron-left"></i> Harris Corner
               </a>
             
           </div>
@@ -472,6 +472,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/04/15/音乐/" rel="prev" title="我喜欢的音乐">
+                我喜欢的音乐 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -607,7 +611,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1、向量究竟是什么"><span class="nav-number">1.</span> <span class="nav-text">1、向量究竟是什么</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2、线性组合、张成的空间"><span class="nav-number">2.</span> <span class="nav-text">2、线性组合、张成的空间</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#线性组合"><span class="nav-number">2.1.</span> <span class="nav-text">线性组合</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#张成的空间"><span class="nav-number">2.2.</span> <span class="nav-text">张成的空间</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#线性相关和线性无关"><span class="nav-number">2.3.</span> <span class="nav-text">线性相关和线性无关</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#基的严格定义"><span class="nav-number">2.4.</span> <span class="nav-text">基的严格定义</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3、矩阵与线性变换"><span class="nav-number">3.</span> <span class="nav-text">3、矩阵与线性变换</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#线性变换的充要条件"><span class="nav-number">3.1.</span> <span class="nav-text">线性变换的充要条件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#用矩阵表示"><span class="nav-number">3.2.</span> <span class="nav-text">用矩阵表示</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二维旋转矩阵"><span class="nav-number">3.3.</span> <span class="nav-text">二维旋转矩阵</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4、矩阵乘法与线性变换复合"><span class="nav-number">4.</span> <span class="nav-text">4、矩阵乘法与线性变换复合</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#矩阵相乘的几何意义"><span class="nav-number">4.1.</span> <span class="nav-text">矩阵相乘的几何意义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#矩阵结合率的证明"><span class="nav-number">4.2.</span> <span class="nav-text">矩阵结合率的证明</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#5、行列式"><span class="nav-number">5.</span> <span class="nav-text">5、行列式</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#行列式的几何意义"><span class="nav-number">5.1.</span> <span class="nav-text">行列式的几何意义</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#6、逆矩阵、列空间与零空间"><span class="nav-number">6.</span> <span class="nav-text">6、逆矩阵、列空间与零空间</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#逆矩阵"><span class="nav-number">6.1.</span> <span class="nav-text">逆矩阵</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#线性方程组的求解"><span class="nav-number">6.2.</span> <span class="nav-text">线性方程组的求解</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#矩阵的秩"><span class="nav-number">6.3.</span> <span class="nav-text">矩阵的秩</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#列空间"><span class="nav-number">6.4.</span> <span class="nav-text">列空间</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#零空间"><span class="nav-number">6.5.</span> <span class="nav-text">零空间</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#7、点积与对偶性"><span class="nav-number">7.</span> <span class="nav-text">7、点积与对偶性</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#向量究竟是什么"><span class="nav-number">1.</span> <span class="nav-text">向量究竟是什么</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#线性组合、张成的空间"><span class="nav-number">2.</span> <span class="nav-text">线性组合、张成的空间</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#线性组合"><span class="nav-number">2.1.</span> <span class="nav-text">线性组合</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#张成的空间"><span class="nav-number">2.2.</span> <span class="nav-text">张成的空间</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#线性相关和线性无关"><span class="nav-number">2.3.</span> <span class="nav-text">线性相关和线性无关</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#基的严格定义"><span class="nav-number">2.4.</span> <span class="nav-text">基的严格定义</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#矩阵与线性变换"><span class="nav-number">3.</span> <span class="nav-text">矩阵与线性变换</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#线性变换的充要条件"><span class="nav-number">3.1.</span> <span class="nav-text">线性变换的充要条件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#用矩阵表示"><span class="nav-number">3.2.</span> <span class="nav-text">用矩阵表示</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二维旋转矩阵"><span class="nav-number">3.3.</span> <span class="nav-text">二维旋转矩阵</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#矩阵乘法与线性变换复合"><span class="nav-number">4.</span> <span class="nav-text">矩阵乘法与线性变换复合</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#矩阵相乘的几何意义"><span class="nav-number">4.1.</span> <span class="nav-text">矩阵相乘的几何意义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#矩阵结合率的证明"><span class="nav-number">4.2.</span> <span class="nav-text">矩阵结合率的证明</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#行列式"><span class="nav-number">5.</span> <span class="nav-text">行列式</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#行列式的几何意义"><span class="nav-number">5.1.</span> <span class="nav-text">行列式的几何意义</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#逆矩阵、列空间与零空间"><span class="nav-number">6.</span> <span class="nav-text">逆矩阵、列空间与零空间</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#逆矩阵"><span class="nav-number">6.1.</span> <span class="nav-text">逆矩阵</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#线性方程组的求解"><span class="nav-number">6.2.</span> <span class="nav-text">线性方程组的求解</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#矩阵的秩"><span class="nav-number">6.3.</span> <span class="nav-text">矩阵的秩</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#列空间"><span class="nav-number">6.4.</span> <span class="nav-text">列空间</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#零空间"><span class="nav-number">6.5.</span> <span class="nav-text">零空间</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#点积与对偶性"><span class="nav-number">7.</span> <span class="nav-text">点积与对偶性</span></a></li></ol></div>
             
 
           </div>

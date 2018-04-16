@@ -415,6 +415,210 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/15/线性代数的本质/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Liyiming">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/04/15/线性代数的本质/" itemprop="url">线性代数的本质</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-15T12:47:33+08:00">
+                2018-04-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Math/" itemprop="url" rel="index">
+                    <span itemprop="name">Math</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="向量究竟是什么"><a href="#向量究竟是什么" class="headerlink" title="向量究竟是什么"></a>向量究竟是什么</h1><p>三种观点</p>
+<p>物理：向量是空间中的箭头</p>
+<p>计算机：向量是有序的数字列表</p>
+<p>数学：向量可以是任何东西，只要保证两个向量相加以及数字和向量相乘有意义即可。</p>
+<h1 id="线性组合、张成的空间"><a href="#线性组合、张成的空间" class="headerlink" title="线性组合、张成的空间"></a>线性组合、张成的空间</h1><h2 id="线性组合"><a href="#线性组合" class="headerlink" title="线性组合"></a>线性组合</h2><p>“<strong>将向量进行缩放再相加</strong>” 这种操作称为<strong>线性组合</strong>    </p>
+<p><a href="https://i.loli.net/2018/04/15/5ad369d2b901c.png" target="_blank" rel="noopener"><img src="https://i.loli.net/2018/04/15/5ad369d2b901c.png" alt="linear_algebra_linear_combination.png"></a></p>
+<h2 id="张成的空间"><a href="#张成的空间" class="headerlink" title="张成的空间"></a><strong>张成的空间</strong></h2><p>v, w 的 <strong>全部线性组合</strong> 所构成的向量集合称为向量 v, w 所张成的空间。</p>
+<p><a href="https://i.loli.net/2018/04/15/5ad369ffad5f0.png" target="_blank" rel="noopener"><img src="https://i.loli.net/2018/04/15/5ad369ffad5f0.png" alt="linear_algebra_span.png"></a></p>
+<h2 id="线性相关和线性无关"><a href="#线性相关和线性无关" class="headerlink" title="线性相关和线性无关"></a><strong>线性相关</strong>和<strong>线性无关</strong></h2><p><a href="https://i.loli.net/2018/04/15/5ad36a365350c.png" target="_blank" rel="noopener"><img src="https://i.loli.net/2018/04/15/5ad36a365350c.png" alt="linear_algebra_linear_dependent.png"></a></p>
+<p><a href="https://i.loli.net/2018/04/15/5ad36a57c58b5.png" target="_blank" rel="noopener"><img src="https://i.loli.net/2018/04/15/5ad36a57c58b5.png" alt="linear_algebra_linear_independent.png"></a></p>
+<h2 id="基的严格定义"><a href="#基的严格定义" class="headerlink" title="基的严格定义"></a><strong>基</strong>的严格定义</h2><p><a href="https://i.loli.net/2018/04/15/5ad36aceccd2c.png" target="_blank" rel="noopener"><img src="https://i.loli.net/2018/04/15/5ad36aceccd2c.png" alt="linear_algebra_basis_definition.png"></a></p>
+<h1 id="矩阵与线性变换"><a href="#矩阵与线性变换" class="headerlink" title="矩阵与线性变换"></a>矩阵与线性变换</h1><p>输入一个向量，会输出另一个向量</p>
+<p><a href="https://i.loli.net/2018/04/15/5ad36ae34ee68.png" target="_blank" rel="noopener"><img src="https://i.loli.net/2018/04/15/5ad36ae34ee68.png" alt="linear_algebra_transform_vector_move.png"></a></p>
+<p>变换前：白色方格</p>
+<p>变换后：蓝色菱形</p>
+<p><a href="https://i.loli.net/2018/04/15/5ad36afb68d3b.png" target="_blank" rel="noopener"><img src="https://i.loli.net/2018/04/15/5ad36afb68d3b.png" alt="linear_algebra_what_is_linear_transform.png"></a></p>
+<h2 id="线性变换的充要条件"><a href="#线性变换的充要条件" class="headerlink" title="线性变换的充要条件"></a><strong>线性变换</strong>的充要条件</h2><p>1、变换前后，所有的直线仍是直线</p>
+<p>2、变换前后，原点保持不变</p>
+<h2 id="用矩阵表示"><a href="#用矩阵表示" class="headerlink" title="用矩阵表示"></a>用矩阵表示</h2><p><a href="https://i.loli.net/2018/04/15/5ad36b17b5350.png" target="_blank" rel="noopener"><img src="https://i.loli.net/2018/04/15/5ad36b17b5350.png" alt="linear_algebra_transform_compute_all.png"></a></p>
+<p>一般形式</p>
+<p><a href="https://i.loli.net/2018/04/15/5ad36b362af20.png" target="_blank" rel="noopener"><img src="https://i.loli.net/2018/04/15/5ad36b362af20.png" alt="linear_algebra_transform_abcdxy_after.png"></a></p>
+<h2 id="二维旋转矩阵"><a href="#二维旋转矩阵" class="headerlink" title="二维旋转矩阵"></a>二维旋转矩阵</h2><p>$\begin{bmatrix} cos\theta&amp;-sin\theta \sin\theta\ &amp;  cos\theta \ \end{bmatrix} $</p>
+<p>将坐标轴逆时针旋转$\theta$角度,向量<strong>$i$</strong>（1,0）就 变成了（$cos\theta,sin\theta$）,向量<strong>$j$</strong>（0,1）就 变成了（$-sin\theta,cos\theta$）。</p>
+<h1 id="矩阵乘法与线性变换复合"><a href="#矩阵乘法与线性变换复合" class="headerlink" title="矩阵乘法与线性变换复合"></a>矩阵乘法与线性变换复合</h1><h2 id="矩阵相乘的几何意义"><a href="#矩阵相乘的几何意义" class="headerlink" title="矩阵相乘的几何意义"></a>矩阵相乘的几何意义</h2><p>矩阵相乘的几何意义，就是线性变换的复合。</p>
+<p><img src="https://i.loli.net/2018/04/15/5ad3680c3aa74.png" alt=""></p>
+<p>要从右往左读，因为Shear和Rotation乘的几何意义是先旋转变换再剪切变换。显然先Shear和先Rotation的效果是不一样的，这也是为什么矩阵乘法中AB$\neq$BA。</p>
+<p><a href="https://i.loli.net/2018/04/15/5ad36b79bd1d2.png" target="_blank" rel="noopener"><img src="https://i.loli.net/2018/04/15/5ad36b79bd1d2.png" alt="微信图片_20180415135939.png"></a></p>
+<p><a href="https://i.loli.net/2018/04/15/5ad36bd0c5c3f.png" target="_blank" rel="noopener"><img src="https://i.loli.net/2018/04/15/5ad36bd0c5c3f.png" alt="微信图片_20180415140104.png"></a></p>
+<h2 id="矩阵结合率的证明"><a href="#矩阵结合率的证明" class="headerlink" title="矩阵结合率的证明"></a>矩阵结合率的证明</h2><p>为什么(AB)C=A(BC)?哈哈哈，答案很简单，因为它们从右往左读是一样的！都是由C$\rightarrow$B$\rightarrow$A的线性变换！</p>
+<p>（这里吐槽一下上课学的线代，证明的时候就给个矩阵让你自己推一遍，根本不知道为什么）</p>
+<h1 id="行列式"><a href="#行列式" class="headerlink" title="行列式"></a>行列式</h1><h2 id="行列式的几何意义"><a href="#行列式的几何意义" class="headerlink" title="行列式的几何意义"></a>行列式的几何意义</h2><p>线性变换对面积产生改变的比例（也可以为负值，即空间取向发生了反转），称为这个变换的行列式。<a href="https://i.loli.net/2018/04/15/5ad36bf9bc64b.png" target="_blank" rel="noopener"><img src="https://i.loli.net/2018/04/15/5ad36bf9bc64b.png" alt="微信图片_20180415204552.png"></a></p>
+<p>理解他的意义比计算重要得多。</p>
+<p>行列式等于零，意味着这个矩阵所代表的变换将空间压缩到了更小的维度上。（两个向量共线了）</p>
+<p><a href="https://i.loli.net/2018/04/15/5ad36c1018928.png" target="_blank" rel="noopener"><img src="https://i.loli.net/2018/04/15/5ad36c1018928.png" alt="微信图片_20180415204938.png"></a></p>
+<p>det（AB）=det(A)*det(B) 为什么？</p>
+<p>因为det（AB）表示经过AB两次缩放后的面积，det（A）*det（B）表示先A后B放缩后的面积，本质上是一样的。</p>
+<h1 id="逆矩阵、列空间与零空间"><a href="#逆矩阵、列空间与零空间" class="headerlink" title="逆矩阵、列空间与零空间"></a>逆矩阵、列空间与零空间</h1><h2 id="逆矩阵"><a href="#逆矩阵" class="headerlink" title="逆矩阵"></a>逆矩阵</h2><p>如果一个矩阵$A$把向量<strong>$x$</strong>变成了向量<strong>$v$</strong>,那么逆矩阵$A^{-1}$表示把向量<strong>$v$</strong>变成了向量<strong>$x$</strong>的线性变换。</p>
+<p>$AA^{-1}=E$，因为$AA^{-1}$因为把一个向量变过去又变过来，相当于什么都没做。这被称为恒等变换。</p>
+<h2 id="线性方程组的求解"><a href="#线性方程组的求解" class="headerlink" title="线性方程组的求解"></a>线性方程组的求解</h2><p><a href="https://i.loli.net/2018/04/15/5ad36c4bc0490.png" target="_blank" rel="noopener"><img src="https://i.loli.net/2018/04/15/5ad36c4bc0490.png" alt="微信图片_20180415212410.png"></a></p>
+<p>两边同时乘以$A^{-1}$:</p>
+<p>​                                    $A^{-1}Ax = A^{-1}v$</p>
+<p>即</p>
+<p>​                                    $x = A^{-1}v$</p>
+<p>只要$A$不将空间压缩到更低的维度上，那就存在$A^{-1}$。（如果$A$的行列式为0，那就说明A变换将空间的维度变低了，就变不回去了，$A^{-1}$也就不存在了）</p>
+<p>（嗯，降维打击是不可逆的！）</p>
+<p>当然，$A$的行列式等于0时，$x$也是有可能有解的（足够幸运的话）即$x$和$v$共线时，即使降维也可以变过去！</p>
+<p><a href="https://i.loli.net/2018/04/15/5ad36c664235c.png" target="_blank" rel="noopener"><img src="https://i.loli.net/2018/04/15/5ad36c664235c.png" alt="微信图片_20180415214925.png"></a></p>
+<h2 id="矩阵的秩"><a href="#矩阵的秩" class="headerlink" title="矩阵的秩"></a>矩阵的秩</h2><p>其实秩代表的就是变换空间的维度啦。。这样就好理解了。。。</p>
+<p>​                                        $R(A) = 0 $  点</p>
+<p>​                                        $R(A) = 1$  直线</p>
+<p>​                                        $R(A) = 2 $  平面</p>
+<p>​                                        $R(A) = 3 $  空间</p>
+<h2 id="列空间"><a href="#列空间" class="headerlink" title="列空间"></a>列空间</h2><p>不管是一条直线、一个平面还是三维空间等，所有可能的变换结果的集合，被称为矩阵的列空间。</p>
+<p>列空间就是矩阵的列张成的空间。</p>
+<p>为什么叫列空间？？</p>
+<p>因为矩阵的列可以告诉我们基向量变换后的位置，这些变换后的基向量张成的空间就是所有可能的变换结果。</p>
+<p>所以，秩的更精确的定义是列空间的维数。</p>
+<h2 id="零空间"><a href="#零空间" class="headerlink" title="零空间"></a>零空间</h2><p>变换后落在原点的向量的集合，成为“零空间”或“核”。</p>
+<p>对于线性方程组，当向量$v$为0时，即$Ax = 0$时，零空间给出的就是这个线性方程组所有可能的解。</p>
+<p><a href="https://i.loli.net/2018/04/15/5ad36c80ee5d0.png" target="_blank" rel="noopener"><img src="https://i.loli.net/2018/04/15/5ad36c80ee5d0.png" alt="微信图片_20180415221404.png"></a></p>
+<h1 id="点积与对偶性"><a href="#点积与对偶性" class="headerlink" title="点积与对偶性"></a>点积与对偶性</h1><p>一个向量的对偶是它定义的线性变换。 </p>
+<p>一个多维空间到一维空间的线性变换的对偶是多维空间中的某个特定向量。</p>
+<p>两个向量点积，就是将其中一个转化为线性变换。这个证明有点强，建议看视频！</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/14/Harris Corner/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -770,7 +974,7 @@ end
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -781,7 +985,7 @@ end
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -792,7 +996,7 @@ end
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
