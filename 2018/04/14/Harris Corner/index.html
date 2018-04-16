@@ -79,21 +79,23 @@
 
 
 
-<meta name="description" content="Basic idea Algorithm Codemain.m                主函数im = imread(&amp;apos;officegray.bmp&amp;apos;); im = double(im);  sigma = 2.5; thresh = 35;   nonmaxrad = 5; K=0.02; [cim, r3, c3] = harris(im, sigma,thresh,">
+<meta name="description" content="Basic idea Algorithm Codemain.m                主函数im = imread(&amp;#39;officegray.bmp&amp;#39;); im = double(im);  sigma = 2.5; thresh = 35;   nonmaxrad = 5; K=0.02; [cim, r3, c3] = harris(im, sigma,thresh, n">
 <meta name="keywords" content="CV">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Harris Corner">
 <meta property="og:url" content="http://yoursite.com/2018/04/14/Harris Corner/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Basic idea Algorithm Codemain.m                主函数im = imread(&amp;apos;officegray.bmp&amp;apos;); im = double(im);  sigma = 2.5; thresh = 35;   nonmaxrad = 5; K=0.02; [cim, r3, c3] = harris(im, sigma,thresh,">
+<meta property="og:description" content="Basic idea Algorithm Codemain.m                主函数im = imread(&amp;#39;officegray.bmp&amp;#39;); im = double(im);  sigma = 2.5; thresh = 35;   nonmaxrad = 5; K=0.02; [cim, r3, c3] = harris(im, sigma,thresh, n">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://i.loli.net/2018/04/16/5ad3f705f3a1b.png">
 <meta property="og:image" content="https://i.loli.net/2018/04/16/5ad3f72690bab.png">
 <meta property="og:image" content="https://i.loli.net/2018/04/16/5ad3f85baa285.png">
-<meta property="og:updated_time" content="2018-04-16T06:54:16.456Z">
+<meta property="og:image" content="https://i.loli.net/2018/04/16/5ad4c0c25e7ec.png">
+<meta property="og:image" content="https://i.loli.net/2018/04/16/5ad4c0c29b4e6.png">
+<meta property="og:updated_time" content="2018-04-16T15:42:45.199Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Harris Corner">
-<meta name="twitter:description" content="Basic idea Algorithm Codemain.m                主函数im = imread(&amp;apos;officegray.bmp&amp;apos;); im = double(im);  sigma = 2.5; thresh = 35;   nonmaxrad = 5; K=0.02; [cim, r3, c3] = harris(im, sigma,thresh,">
+<meta name="twitter:description" content="Basic idea Algorithm Codemain.m                主函数im = imread(&amp;#39;officegray.bmp&amp;#39;); im = double(im);  sigma = 2.5; thresh = 35;   nonmaxrad = 5; K=0.02; [cim, r3, c3] = harris(im, sigma,thresh, n">
 <meta name="twitter:image" content="https://i.loli.net/2018/04/16/5ad3f705f3a1b.png">
 
 
@@ -358,7 +360,7 @@
       
         <h1 id="Basic-idea"><a href="#Basic-idea" class="headerlink" title="Basic idea"></a>Basic idea</h1><h3 id=""><a href="#" class="headerlink" title=""></a><img src="https://i.loli.net/2018/04/16/5ad3f705f3a1b.png" alt="微信图片_20180416090409.png" title="微信图片_20180416090409.png"></h3><p><img src="https://i.loli.net/2018/04/16/5ad3f72690bab.png" alt="微信图片_20180416090440.png" title="微信图片_20180416090440.png"></p>
 <h1 id="Algorithm"><a href="#Algorithm" class="headerlink" title="Algorithm"></a>Algorithm</h1><p><img src="https://i.loli.net/2018/04/16/5ad3f85baa285.png" alt="微信图片_20180416091127.png" title="微信图片_20180416091127.png"></p>
-<h1 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h1><h2 id="main-m-主函数"><a href="#main-m-主函数" class="headerlink" title="main.m                主函数"></a>main.m                主函数</h2><pre><code>im = imread(&apos;officegray.bmp&apos;);
+<h1 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h1><h2 id="main-m-主函数"><a href="#main-m-主函数" class="headerlink" title="main.m                主函数"></a>main.m                主函数</h2><pre><code>im = imread(&#39;officegray.bmp&#39;);
 im = double(im);
 
 sigma = 2.5;
@@ -368,18 +370,18 @@ K=0.02;
 [cim, r3, c3] = harris(im, sigma,thresh, nonmaxrad);
 
 figure;
-imshow(im,[]), hold on, plot(c3,r3,&apos;*&apos;);
+imshow(im,[]), hold on, plot(c3,r3,&#39;*&#39;);
 </code></pre><h2 id="harris-m-角点检测"><a href="#harris-m-角点检测" class="headerlink" title="harris.m            角点检测"></a>harris.m            角点检测</h2><pre><code>function [cim, r, c, rsubp, csubp] = harris(im, sigma, thresh, radius, disp)
 error(nargchk(2,5,nargin));
 if nargin == 4
 disp = 0;
 end
 
-if ~isa(im,&apos;double&apos;)
+if ~isa(im,&#39;double&#39;)
 im = double(im);
 end
 subpixel = nargout == 5;
-[Ix, Iy] = derivative5(im, &apos;x&apos;, &apos;y&apos;); %Ix，Iy是
+[Ix, Iy] = derivative5(im, &#39;x&#39;, &#39;y&#39;); %Ix，Iy是
 Ix2 = gaussfilt(Ix.^2,  sigma);
 Iy2 = gaussfilt(Iy.^2,  sigma);    
 Ixy = gaussfilt(Ix.*Iy, sigma);   
@@ -427,31 +429,31 @@ end
 gx = false;
 
 for n = 1:length(varargin)
-  if strcmpi(&apos;x&apos;, varargin{n})
-      varargout{n} = conv2(p, d1, im, &apos;same&apos;);    
+  if strcmpi(&#39;x&#39;, varargin{n})
+      varargout{n} = conv2(p, d1, im, &#39;same&#39;);    
       gx = true;   % Record that gx is available for gxy if needed
       gxn = n;
-  elseif strcmpi(&apos;y&apos;, varargin{n})
-      varargout{n} = conv2(d1, p, im, &apos;same&apos;);
-  elseif strcmpi(&apos;xx&apos;, varargin{n})
-      varargout{n} = conv2(p, d2, im, &apos;same&apos;);    
-  elseif strcmpi(&apos;yy&apos;, varargin{n})
-      varargout{n} = conv2(d2, p, im, &apos;same&apos;);
-  elseif strcmpi(&apos;xy&apos;, varargin{n}) | strcmpi(&apos;yx&apos;, varargin{n})
+  elseif strcmpi(&#39;y&#39;, varargin{n})
+      varargout{n} = conv2(d1, p, im, &#39;same&#39;);
+  elseif strcmpi(&#39;xx&#39;, varargin{n})
+      varargout{n} = conv2(p, d2, im, &#39;same&#39;);    
+  elseif strcmpi(&#39;yy&#39;, varargin{n})
+      varargout{n} = conv2(d2, p, im, &#39;same&#39;);
+  elseif strcmpi(&#39;xy&#39;, varargin{n}) | strcmpi(&#39;yx&#39;, varargin{n})
       if gx
-          varargout{n} = conv2(d1, p, varargout{gxn}, &apos;same&apos;);
+          varargout{n} = conv2(d1, p, varargout{gxn}, &#39;same&#39;);
       else
-          gx = conv2(p, d1, im, &apos;same&apos;);    
-          varargout{n} = conv2(d1, p, gx, &apos;same&apos;);
+          gx = conv2(p, d1, im, &#39;same&#39;);    
+          varargout{n} = conv2(d1, p, gx, &#39;same&#39;);
       end
   else
-      error(sprintf(&apos;&apos;&apos;%s&apos;&apos; is an unrecognized derivative option&apos;,varargin{n}));
+      error(sprintf(&#39;&#39;&#39;%s&#39;&#39; is an unrecognized derivative option&#39;,varargin{n}));
   end
 end
-</code></pre><h2 id="Gaussfilt-m-高斯滤波"><a href="#Gaussfilt-m-高斯滤波" class="headerlink" title="Gaussfilt.m            高斯滤波"></a>Gaussfilt.m            高斯滤波</h2><pre><code>function smim = gaussfilt(im, sigma)
-assert(ndims(im) == 2, &apos;Image must be greyscale&apos;);
+</code></pre><h2 id="Gaussfilt-m-高斯模糊"><a href="#Gaussfilt-m-高斯模糊" class="headerlink" title="Gaussfilt.m            高斯模糊"></a>Gaussfilt.m            高斯模糊</h2><pre><code>function smim = gaussfilt(im, sigma)
+assert(ndims(im) == 2, &#39;Image must be greyscale&#39;);
 
-if ~strcmp(class(im),&apos;double&apos;)
+if ~strcmp(class(im),&#39;double&#39;)
     im = double(im);  
 end
 
@@ -461,7 +463,7 @@ if ~mod(sze,2)
 end
 sze = max(sze,1); 
 
-h = fspecial(&apos;gaussian&apos;, [sze sze], sigma);
+h = fspecial(&#39;gaussian&#39;, [sze sze], sigma);
 
 smim = filter2(h, im);
 </code></pre><h2 id="nonmaxsuppts-m-非极大值抑制"><a href="#nonmaxsuppts-m-非极大值抑制" class="headerlink" title="nonmaxsuppts.m         非极大值抑制"></a>nonmaxsuppts.m         非极大值抑制</h2><pre><code>function [r,c, rsubp, csubp] = nonmaxsuppts(cim, radius, thresh, im)
@@ -523,17 +525,19 @@ end
 if nargin==4 &amp; ~isempty(r)     % Overlay corners on supplied image.
     figure(1), imshow(im,[]), hold on
     if subPixel
-        plot(csubp,rsubp,&apos;r+&apos;), title(&apos;corners detected&apos;);
+        plot(csubp,rsubp,&#39;r+&#39;), title(&#39;corners detected&#39;);
     else        
-        plot(c,r,&apos;r+&apos;), title(&apos;corners detected&apos;);
+        plot(c,r,&#39;r+&#39;), title(&#39;corners detected&#39;);
     end
     hold off
 end
 
 if isempty(r)     
-    fprintf(&apos;No maxima above threshold found\n&apos;);
+    fprintf(&#39;No maxima above threshold found\n&#39;);
 end
-</code></pre>
+</code></pre><h1 id="效果图"><a href="#效果图" class="headerlink" title="效果图"></a>效果图</h1><h2 id="原图"><a href="#原图" class="headerlink" title="原图"></a>原图</h2><p><img src="https://i.loli.net/2018/04/16/5ad4c0c25e7ec.png" alt=""></p>
+<p><img src="https://i.loli.net/2018/04/16/5ad4c0c29b4e6.png" alt=""></p>
+
       
     </div>
     
@@ -569,8 +573,8 @@ end
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/04/15/线性代数的本质/" rel="prev" title="线性代数的本质">
-                线性代数的本质 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/04/15/音乐/" rel="prev" title="我喜欢的音乐">
+                我喜欢的音乐 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -652,7 +656,7 @@ end
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -707,7 +711,7 @@ end
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Basic-idea"><span class="nav-number">1.</span> <span class="nav-text">Basic idea</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#"><span class="nav-number">1.0.1.</span> <span class="nav-text"></span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Algorithm"><span class="nav-number">2.</span> <span class="nav-text">Algorithm</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Code"><span class="nav-number">3.</span> <span class="nav-text">Code</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#main-m-主函数"><span class="nav-number">3.1.</span> <span class="nav-text">main.m                主函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#harris-m-角点检测"><span class="nav-number">3.2.</span> <span class="nav-text">harris.m            角点检测</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#derivative5-m-计算梯度"><span class="nav-number">3.3.</span> <span class="nav-text">derivative5.m            计算梯度</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Gaussfilt-m-高斯滤波"><span class="nav-number">3.4.</span> <span class="nav-text">Gaussfilt.m            高斯滤波</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#nonmaxsuppts-m-非极大值抑制"><span class="nav-number">3.5.</span> <span class="nav-text">nonmaxsuppts.m         非极大值抑制</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Basic-idea"><span class="nav-number">1.</span> <span class="nav-text">Basic idea</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#"><span class="nav-number">1.0.1.</span> <span class="nav-text"></span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Algorithm"><span class="nav-number">2.</span> <span class="nav-text">Algorithm</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Code"><span class="nav-number">3.</span> <span class="nav-text">Code</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#main-m-主函数"><span class="nav-number">3.1.</span> <span class="nav-text">main.m                主函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#harris-m-角点检测"><span class="nav-number">3.2.</span> <span class="nav-text">harris.m            角点检测</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#derivative5-m-计算梯度"><span class="nav-number">3.3.</span> <span class="nav-text">derivative5.m            计算梯度</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Gaussfilt-m-高斯模糊"><span class="nav-number">3.4.</span> <span class="nav-text">Gaussfilt.m            高斯模糊</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#nonmaxsuppts-m-非极大值抑制"><span class="nav-number">3.5.</span> <span class="nav-text">nonmaxsuppts.m         非极大值抑制</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#效果图"><span class="nav-number">4.</span> <span class="nav-text">效果图</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#原图"><span class="nav-number">4.1.</span> <span class="nav-text">原图</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -914,6 +918,28 @@ end
   
 
   
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
 
   
 
