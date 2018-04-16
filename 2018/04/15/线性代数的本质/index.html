@@ -79,16 +79,35 @@
 
 
 
-<meta name="description" content="Can u hear me?">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="1、向量究竟是什么三种观点 物理：向量是空间中的箭头 计算机：向量是有序的数字列表 数学：向量可以是任何东西，只要保证两个向量相加以及数字和向量相乘有意义即可。 2、线性组合、张成的空间线性组合“将向量进行缩放再相加” 这种操作称为线性组合      张成的空间v, w 的 全部线性组合 所构成的向量集合称为向量 v, w 所张成的空间。  线性相关和线性无关  基的严格定义 3、矩阵与线性变换输">
+<meta property="og:type" content="article">
+<meta property="og:title" content="线性代数的本质">
+<meta property="og:url" content="http://yoursite.com/2018/04/15/线性代数的本质/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Can u hear me?">
+<meta property="og:description" content="1、向量究竟是什么三种观点 物理：向量是空间中的箭头 计算机：向量是有序的数字列表 数学：向量可以是任何东西，只要保证两个向量相加以及数字和向量相乘有意义即可。 2、线性组合、张成的空间线性组合“将向量进行缩放再相加” 这种操作称为线性组合      张成的空间v, w 的 全部线性组合 所构成的向量集合称为向量 v, w 所张成的空间。  线性相关和线性无关  基的严格定义 3、矩阵与线性变换输">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://i.loli.net/2018/04/15/5ad369d2b901c.png">
+<meta property="og:image" content="https://i.loli.net/2018/04/15/5ad369ffad5f0.png">
+<meta property="og:image" content="https://i.loli.net/2018/04/15/5ad36a365350c.png">
+<meta property="og:image" content="https://i.loli.net/2018/04/15/5ad36a57c58b5.png">
+<meta property="og:image" content="https://i.loli.net/2018/04/15/5ad36aceccd2c.png">
+<meta property="og:image" content="https://i.loli.net/2018/04/15/5ad36ae34ee68.png">
+<meta property="og:image" content="https://i.loli.net/2018/04/15/5ad36afb68d3b.png">
+<meta property="og:image" content="https://i.loli.net/2018/04/15/5ad36b17b5350.png">
+<meta property="og:image" content="https://i.loli.net/2018/04/15/5ad36b362af20.png">
+<meta property="og:image" content="https://i.loli.net/2018/04/15/5ad3680c3aa74.png">
+<meta property="og:image" content="https://i.loli.net/2018/04/15/5ad36b79bd1d2.png">
+<meta property="og:image" content="https://i.loli.net/2018/04/15/5ad36bd0c5c3f.png">
+<meta property="og:image" content="https://i.loli.net/2018/04/15/5ad36bf9bc64b.png">
+<meta property="og:image" content="https://i.loli.net/2018/04/15/5ad36c1018928.png">
+<meta property="og:image" content="https://i.loli.net/2018/04/15/5ad36c4bc0490.png">
+<meta property="og:image" content="https://i.loli.net/2018/04/15/5ad36c664235c.png">
+<meta property="og:image" content="https://i.loli.net/2018/04/15/5ad36c80ee5d0.png">
+<meta property="og:updated_time" content="2018-04-15T15:15:25.668Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
-<meta name="twitter:description" content="Can u hear me?">
+<meta name="twitter:title" content="线性代数的本质">
+<meta name="twitter:description" content="1、向量究竟是什么三种观点 物理：向量是空间中的箭头 计算机：向量是有序的数字列表 数学：向量可以是任何东西，只要保证两个向量相加以及数字和向量相乘有意义即可。 2、线性组合、张成的空间线性组合“将向量进行缩放再相加” 这种操作称为线性组合      张成的空间v, w 的 全部线性组合 所构成的向量集合称为向量 v, w 所张成的空间。  线性相关和线性无关  基的严格定义 3、矩阵与线性变换输">
+<meta name="twitter:image" content="https://i.loli.net/2018/04/15/5ad369d2b901c.png">
 
 
 
@@ -118,13 +137,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/04/15/线性代数的本质/"/>
 
 
 
 
 
-  <title>Hexo</title>
+  <title>线性代数的本质 | Hexo</title>
   
 
 
@@ -143,8 +162,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -247,128 +265,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/15/Untitled/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Liyiming">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/04/15/Untitled/" itemprop="url">未命名</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-15T14:01:41+08:00">
-                2018-04-15
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
 
   
 
@@ -398,9 +297,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/04/15/线性代数的本质/" itemprop="url">线性代数的本质</a></h1>
+          <h1 class="post-title" itemprop="name headline">线性代数的本质</h1>
         
 
         <div class="post-meta">
@@ -450,9 +347,7 @@
       
 
       
-        
-          
-            <h1 id="1、向量究竟是什么"><a href="#1、向量究竟是什么" class="headerlink" title="1、向量究竟是什么"></a>1、向量究竟是什么</h1><p>三种观点</p>
+        <h1 id="1、向量究竟是什么"><a href="#1、向量究竟是什么" class="headerlink" title="1、向量究竟是什么"></a>1、向量究竟是什么</h1><p>三种观点</p>
 <p>物理：向量是空间中的箭头</p>
 <p>计算机：向量是有序的数字列表</p>
 <p>数学：向量可以是任何东西，只要保证两个向量相加以及数字和向量相乘有意义即可。</p>
@@ -516,8 +411,6 @@
 <p>一个多维空间到一维空间的线性变换的对偶是多维空间中的某个特定向量。</p>
 <p>两个向量点积，就是将其中一个转化为线性变换。这个证明有点强，建议看视频！</p>
 
-          
-        
       
     </div>
     
@@ -534,132 +427,32 @@
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/14/你好呀/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Liyiming">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/04/14/你好呀/" itemprop="url">你好呀</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-14T16:38:18+08:00">
-                2018-04-14
-              </time>
+              <a href="/2018/04/14/你好呀/" rel="next" title="你好呀">
+                <i class="fa fa-chevron-left"></i> 你好呀
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
+              <a href="/2018/04/15/Untitled/" rel="prev" title="">
+                 <i class="fa fa-chevron-right"></i>
+              </a>
             
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <h1 id="gg"><a href="#gg" class="headerlink" title="gg"></a>gg</h1><p># </p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -669,257 +462,11 @@
   </article>
 
 
-    
-      
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/14/你好/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Liyiming">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/04/14/你好/" itemprop="url">你好</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-14T16:10:14+08:00">
-                2018-04-14
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="1"><a href="#1" class="headerlink" title="1"></a>1</h1>
-          
-        
+    <div class="post-spread">
       
     </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/14/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Liyiming">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/04/14/hello-world/" itemprop="url">Hello World</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-14T15:14:10+08:00">
-                2018-04-14
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
 
 
           </div>
@@ -927,6 +474,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -947,8 +498,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -994,6 +554,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1、向量究竟是什么"><span class="nav-number">1.</span> <span class="nav-text">1、向量究竟是什么</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2、线性组合、张成的空间"><span class="nav-number">2.</span> <span class="nav-text">2、线性组合、张成的空间</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#线性组合"><span class="nav-number">2.0.1.</span> <span class="nav-text">线性组合</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#张成的空间"><span class="nav-number">2.0.2.</span> <span class="nav-text">张成的空间</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#线性相关和线性无关"><span class="nav-number">2.0.3.</span> <span class="nav-text">线性相关和线性无关</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#基的严格定义"><span class="nav-number">2.0.4.</span> <span class="nav-text">基的严格定义</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3、矩阵与线性变换"><span class="nav-number">3.</span> <span class="nav-text">3、矩阵与线性变换</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#线性变换的充要条件"><span class="nav-number">3.0.1.</span> <span class="nav-text">线性变换的充要条件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#用矩阵表示"><span class="nav-number">3.0.2.</span> <span class="nav-text">用矩阵表示</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二维旋转矩阵"><span class="nav-number">3.0.3.</span> <span class="nav-text">二维旋转矩阵</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4、矩阵乘法与线性变换复合"><span class="nav-number">4.</span> <span class="nav-text">4、矩阵乘法与线性变换复合</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#矩阵相乘的几何意义"><span class="nav-number">4.0.1.</span> <span class="nav-text">矩阵相乘的几何意义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#矩阵结合率的证明"><span class="nav-number">4.0.2.</span> <span class="nav-text">矩阵结合率的证明</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#5、行列式"><span class="nav-number">5.</span> <span class="nav-text">5、行列式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#行列式的几何意义"><span class="nav-number">5.0.1.</span> <span class="nav-text">行列式的几何意义</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#6、逆矩阵、列空间与零空间"><span class="nav-number">6.</span> <span class="nav-text">6、逆矩阵、列空间与零空间</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#逆矩阵"><span class="nav-number">6.0.1.</span> <span class="nav-text">逆矩阵</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#线性方程组的求解"><span class="nav-number">6.0.2.</span> <span class="nav-text">线性方程组的求解</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#矩阵的秩"><span class="nav-number">6.0.3.</span> <span class="nav-text">矩阵的秩</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#列空间"><span class="nav-number">6.0.4.</span> <span class="nav-text">列空间</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#零空间"><span class="nav-number">6.0.5.</span> <span class="nav-text">零空间</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7、点积与对偶性"><span class="nav-number">6.1.</span> <span class="nav-text">7、点积与对偶性</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -1134,6 +710,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
